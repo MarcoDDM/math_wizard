@@ -25,9 +25,9 @@ function ChildComponent() {
     <div className="calculator">
       <input className="inputContainer" type="text" id="myInput" name="name" pattern="[0-9+\-*/(). ]+" />
       <div className="buttons">
-        {buttons.map((button, index) => (
+        {buttons.map((button) => (
           <input
-            key={index}
+            key={button.value}
             className={button.className}
             type="button"
             value={button.value}
