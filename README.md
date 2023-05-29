@@ -32,9 +32,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Leaderboard <a name="about-project"></a>
+# 📖 Math Magician <a name="about-project"></a>
 
-**Leaderboard** is a project to learn how to consume an REST API.
+**Math Magician** is a project to learn how to build a SPA.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -65,9 +65,8 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Write your name**
-- **Submit scores**
-- **Get all the ranking in order**
+- **Use calculator**
+- **Get quotes**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
