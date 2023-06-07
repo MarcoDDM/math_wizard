@@ -1,8 +1,5 @@
 .App {
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .logo {
@@ -16,28 +13,22 @@
 }
 
 .navbar {
-  list-style-type: none;
   display: flex;
-  align-items: center;
   background-color: maroon;
   height: 3rem;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  justify-content: space-around;
+  align-items: center;
+  padding: 0 1rem;
 }
 
 .navbar li {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin-left: 1rem;
+  list-style-type: none;
 }
 
 .navbar a {
   color: white;
 }
 
-.navbar ul {
-  margin-left: auto;
+.navbar .logo {
+  margin-right: auto;
 }
