@@ -4,7 +4,7 @@ import './Home.css';
 export const Home = () => (
   <div className="home">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Proin faucibuss, elit eget accumsan congue, ante elit iaculis dolor,
+    Proin faucibuss, eelit eget accumsan congue, ante elit iaculis dolor,
     eget luctus lorem odio eu leo. Ut eget lacinia mauris.
     Donec a lectus non diam scelerisque iaculis at ac massa.
     Nullam laoreet risus odio, vitae euismod ex commodo vel.
