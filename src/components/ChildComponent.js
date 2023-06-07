@@ -1,28 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const buttons = [
-  { value: 'AC', className: 'calculatorButton mathButton' },
-  { value: '+/-', className: 'calculatorButton mathButton' },
-  { value: '%', className: 'calculatorButton mathButton' },
-  { value: '÷', className: 'calculatorButton mathButtonOrange' },
-  { value: '7', className: 'calculatorButton' },
-  { value: '8', className: 'calculatorButton' },
-  { value: '9', className: 'calculatorButton' },
-  { value: 'x', className: 'calculatorButton mathButtonOrange' },
-  { value: '4', className: 'calculatorButton' },
-  { value: '5', className: 'calculatorButton' },
-  { value: '6', className: 'calculatorButton' },
-  { value: '-', className: 'calculatorButton mathButtonOrange' },
-  { value: '1', className: 'calculatorButton' },
-  { value: '2', className: 'calculatorButton' },
-  { value: '3', className: 'calculatorButton' },
-  { value: '+', className: 'calculatorButton mathButtonOrange' },
-  { value: '0', className: 'calculatorButton zero' },
-  { value: '.', className: 'calculatorButton' },
-  { value: '=', className: 'calculatorButton mathButtonOrange' },
-];
-
 function ChildComponent({ calcData, handleButtonClick }) {
   return (
     <div className="calculator container">
@@ -36,16 +14,139 @@ function ChildComponent({ calcData, handleButtonClick }) {
         onChange={() => {}}
       />
       <div className="buttonContainer">
-        {buttons.map((button) => (
-          <button
-            key={button.value}
-            className={button.className}
-            type="button"
-            onClick={() => handleButtonClick(button.value)}
-          >
-            {button.value}
-          </button>
-        ))}
+        <button
+          className="calculatorButton mathButton"
+          type="button"
+          onClick={() => handleButtonClick('AC')}
+        >
+          AC
+        </button>
+        <button
+          className="calculatorButton mathButton"
+          type="button"
+          onClick={() => handleButtonClick('+/-')}
+        >
+          +/-
+        </button>
+        <button
+          className="calculatorButton mathButton"
+          type="button"
+          onClick={() => handleButtonClick('%')}
+        >
+          %
+        </button>
+        <button
+          className="mathButton calculatorButton operationButton"
+          type="button"
+          onClick={() => handleButtonClick('÷')}
+        >
+          ÷
+        </button>
+        <button
+          className="calculatorButton mathButton"
+          type="button"
+          onClick={() => handleButtonClick('7')}
+        >
+          7
+        </button>
+        <button
+          className="calculatorButton mathButton"
+          type="button"
+          onClick={() => handleButtonClick('8')}
+        >
+          8
+        </button>
+        <button
+          className="calculatorButton mathButton"
+          type="button"
+          onClick={() => handleButtonClick('9')}
+        >
+          9
+        </button>
+        <button
+          className="mathButton calculatorButton operationButton"
+          type="button"
+          onClick={() => handleButtonClick('x')}
+        >
+          x
+        </button>
+        <button
+          className="calculatorButton mathButton"
+          type="button"
+          onClick={() => handleButtonClick('4')}
+        >
+          4
+        </button>
+        <button
+          className="calculatorButton mathButton"
+          type="button"
+          onClick={() => handleButtonClick('5')}
+        >
+          5
+        </button>
+        <button
+          className="calculatorButton mathButton"
+          type="button"
+          onClick={() => handleButtonClick('6')}
+        >
+          6
+        </button>
+        <button
+          className="mathButton calculatorButton operationButton"
+          type="button"
+          onClick={() => handleButtonClick('-')}
+        >
+          -
+        </button>
+        <button
+          className="calculatorButton mathButton"
+          type="button"
+          onClick={() => handleButtonClick('1')}
+        >
+          1
+        </button>
+        <button
+          className="calculatorButton mathButton"
+          type="button"
+          onClick={() => handleButtonClick('2')}
+        >
+          2
+        </button>
+        <button
+          className="calculatorButton mathButton"
+          type="button"
+          onClick={() => handleButtonClick('3')}
+        >
+          3
+        </button>
+        <button
+          className="mathButton calculatorButton operationButton"
+          type="button"
+          onClick={() => handleButtonClick('+')}
+        >
+          +
+        </button>
+        <button
+          className="calculatorButton zero mathButton"
+          type="button"
+          onClick={() => handleButtonClick('0')}
+        >
+          0
+        </button>
+        <button
+          className="calculatorButton mathButton"
+          type="button"
+          onClick={() => handleButtonClick('.')}
+        >
+          .
+        </button>
+        <button
+          className="mathButton calculatorButton equalsButton"
+          type="button"
+          onClick={() => handleButtonClick('=')}
+        >
+          =
+        </button>
       </div>
     </div>
   );
