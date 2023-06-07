@@ -5,6 +5,16 @@
   align-items: center;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo h1 {
+  margin: 0;
+  color: white;
+}
+
 .navbar {
   list-style-type: none;
   display: flex;
@@ -14,7 +24,7 @@
   width: 100%;
   margin: 0;
   padding: 0;
-  justify-content: flex-end; /* Añade esta línea */
+  justify-content: space-around
 }
 
 .navbar li {
