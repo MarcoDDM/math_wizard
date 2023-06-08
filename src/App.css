@@ -1,0 +1,34 @@
+.App {
+  text-align: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo h1 {
+  margin: 0;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  background-color: maroon;
+  height: 3rem;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.navbar li {
+  margin-left: 1rem;
+  list-style-type: none;
+}
+
+.navbar a {
+  color: white;
+}
+
+.navbar .logo {
+  margin-right: auto;
+}
